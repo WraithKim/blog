@@ -1,14 +1,14 @@
-# Site settings
-title: Your awesome title
-email: wraithtorch@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
-#url: "http://wraithkim.github.io/blog" # the base hostname & protocol for your site
-github_username:  wraithkim
-
-# Build settings
-markdown: kramdown
+# Site settings
+title: WraithKim's Knowledge workshop
+email: wraithtorch@gmail.com
+description: | # this means to ignore newlines until "baseurl:"
+  This is sub blog for wordpress blog: wraithkim의 지식공방.
+  If you want to go main blog, follow wordpress link.
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+#url: "http://wraithkim.github.io/blog" # the base hostname & protocol for your site
+github_username:  wraithkim
+wordpress_username: wraithkim
+
+# Build settings
+markdown: kramdown
 highlighter: pygments
