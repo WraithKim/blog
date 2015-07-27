@@ -5,13 +5,16 @@ layout: post
 <form action="" method="post">
     <h2>Basic Form</h2>
     <p>
-        text <input type="text" name="val1"><br>
+        text <input type="text" name="val1" maxlength="10"><br>
         submit <input type="submit"><br>
         radio <input type="radio" name="val2" value="A"> 
         <input type="radio" name="val2" value="B"><br>
-        checkbox <input type="checkbox" name="val3" value="a"> 
-        <input type="checkbox" name="val3" value="b"> 
-        <input type="checkbox" name="val3" value="c"><br>
+        <fieldset>
+			<legend>checkbox(with fieldset, legend)</legend>
+				<input type="checkbox" name="val3[]" value="a"> 
+ 	       		<input type="checkbox" name="val3[]" value="b"> 
+   			    <input type="checkbox" name="val3[]" value="c"><br>
+		</fieldset>
         textarea<br> <textarea name="val4" rows="12" cols="40">default value in textarea</textarea><br>
         selelct&amp;option <select name="val5">
         <option value="1">first</option>
@@ -27,6 +30,16 @@ layout: post
         date <input type="date"><br>
         email <input type="email"><br>
         tel <input type="tel"><br>
-        url <input type="url">
+        url <input type="url"><br>
+		password <input type="password" name="val6"><br>
+		file <input type="file" name="val7"><br>
+		multiple select<br>
+		<select name="val8" multiple>
+			<option value="one">One</option>
+			<option value="two">Two</option>
+			<option value="three">Three</option>
+		</select><br>
+		placeholder <input type="text" placeholder="Sample text"><br>
+		required <input type="text" placeholder="Must write form" required><br>
     </p>
 </form>
