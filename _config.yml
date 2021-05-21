@@ -22,3 +22,6 @@ wordpress_username: wraithkim
 markdown: kramdown
 
 highlighter: rouge
+
+kramdown:
+  toc_levels: 1..3
