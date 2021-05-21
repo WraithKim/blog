@@ -205,7 +205,7 @@ Next Fit: 이전에 할당한 위치부터 프로세스를 담을 수 있는 다
 
 #### OSI 7계층에 대해서 설명해주세요
 
-여러 네트워크 장비들의 상호호환성을 위해 네트워크 프로토콜을 특징에 따라 7계층으로 분류한 기준 
+여러 네트워크 장비들의 상호호환성을 위해 네트워크 프로토콜을 특징에 따라 7계층으로 분류한 기준  
 전기 신호에서 프로그램이 인식할 수 있는 데이터가 되기까지의 네트워크 흐름이 정의되어 있음. 데이터는 각 계층을 지날 때마다 캡슐화됨.  
 계층으로 정의되었기 때문에 인접한 계층에만 의존한다는 점과 오류 파악이 용이하다는 장점이 있다.
 
@@ -222,7 +222,7 @@ Next Fit: 이전에 할당한 위치부터 프로세스를 담을 수 있는 다
 OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준이다.
 
 1. 링크 계층: 물리+데이터링크
-2. 인터넷 계층
+2. 인터넷 계층: IP
 3. 전송 계층
 4. 응용 계층: 세션+표현+응용
 
@@ -239,7 +239,7 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 2. local DNS 서버는 www.google.com을 모른다면 자신의 루트 DNS 서버에 요청함.
 3. 루트 DNS 서버는 맨 끝자리인 com을 가리키는 Top level domain(TLD) 서버의 주소를 local DNS 서버에 반환함.
 4. local DNS 서버는 .com TLD 서버에 요청함.
-5. .com TLD 서버는 google.com 에 해당되는 Authoritative DNS 서버를 알고 있다면 해당 서버의 주소를 local DNS 서버에 반환함.
+5. .com TLD 서버는 .google.com 에 해당되는 Authoritative DNS 서버를 알고 있다면 해당 서버의 주소를 local DNS 서버에 반환함.
 6. local DNS는 .google.com DNS 서버에 요청함.
 7. .google.com은 www라는 호스트네임을 알고 있기 때문에 www.google.com에 해당되는 IP 주소를 local DNS에 반환함.
 8. local DNS는 www.google.com과 IP 주소를 필요하면 캐싱하고 PC에 IP 주소를 반환함.
@@ -248,11 +248,34 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 
 #### TCP와 UDP의 차이에 대해서 설명해 주세요
 
+TCP: 신뢰성(패킷 손실/중복/순서 바뀜이 없도록 보장), 연결지향적, 흐름제어와 혼잡제어를 함.
+
+UDP: 비연결성, 오류 정정이나 재송신, 순서 보장을 하지 않음. 그래서 TCP보다 오버헤드가 적고 빠름.
+
 #### TCP 헤더에 대해서 설명해 주세요
+
+* Source Port: 송신 포트
+* Destination Port: 수신 포트
+* 시퀸스 번호: SYN일 때는 초기 시퀸스 번호, 그 외에는 최초 세그먼트부터의 누적 바이트
+* ACK 번호: 수신자가 예상하는 다음 시퀸스 번호(바이트)
+* 데이터 오프셋: TCP 헤더의 크기값, 5워드보다 크면 옵션이 존재함.
+* Reserved: 미래에 사용하기 위해 남긴 예비 필드
+* Flags: 9개의 1비트 플래그, 핸드쉐이크에 사용하는 ACK나 SYN, FIN도 여기서 나타냄.
+* Window 크기: 수신 윈도우의 크기
+* Checksum
+* Urg data pointer
+* options
 
 #### MTU가 무엇인가요?
 
+최대 전송 단위, 연결된 네트워크의 수용량에 따르기 때문에 넘지 않도록 주의해야 함.  
+outbound MTU보다 큰 패킷이 도착하면 이를 MTU보다 작도록 나눔.(IP Fragmentation)
+
 #### 3-way hand shake, 4-way hand shake 흐름에 대해서 설명해주세요
+
+##### 3-way handshake
+
+##### 4-way handshake
 
 ### HTTP
 
@@ -443,3 +466,5 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [StudyTonight-OS tutorial](https://www.studytonight.com/operating-system/)
 * [동기비동기블로킹논블로킹 IO - 배철오](https://www.slideshare.net/unitimes/sync-asyncblockingnonblockingio)
 * Operating System Internals and Design Principles 8th edition - William Stallings, Pearson
+* [TTA 정보통신용어사전](https://terms.tta.or.kr/)
+* [정보통신기술용어해설](http://www.ktword.co.kr/)
