@@ -232,6 +232,18 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 
 #### 도메인 이름으로 실제 IP를 어떻게 찾을 수 있는지 흐름을 설명해 주세요
 
+반복적인 쿼리를 통해 찾아감. 재귀적인 방식도 있지만 이건 상위 도메인 서버에 과부하를 주기 때문에 쓰지 않음.
+여기선 예로 www.google.com을 들자.
+
+1. PC에 설정된 local DNS 서버로 www.google.com에 해당하는 IP 주소를 요청함. (보통 ISP에서 제공하는 서버로 DNS 계층과는 관련 없음.)
+2. local DNS 서버는 www.google.com을 모른다면 자신의 루트 DNS 서버에 요청함.
+3. 루트 DNS 서버는 맨 끝자리인 com을 가리키는 Top level domain(TLD) 서버의 주소를 local DNS 서버에 반환함.
+4. local DNS 서버는 .com TLD 서버에 요청함.
+5. .com TLD 서버는 google.com 에 해당되는 Authoritative DNS 서버를 알고 있다면 해당 서버의 주소를 local DNS 서버에 반환함.
+6. local DNS는 .google.com DNS 서버에 요청함.
+7. .google.com은 www라는 호스트네임을 알고 있기 때문에 www.google.com에 해당되는 IP 주소를 local DNS에 반환함.
+8. local DNS는 www.google.com과 IP 주소를 필요하면 캐싱하고 PC에 IP 주소를 반환함.
+
 ### TCP/UDP
 
 TCP와 UDP의 차이에 대해서 설명해 주세요.  
