@@ -122,7 +122,7 @@ SJF는 프로세스의 정확한 실행시간을 미리 알 수 있어야 된다
 
 #### 동기와 비동기, 블로킹과 넌블로킹의 차이는 무엇인가요?
 
-비교대상에 따라 다름.
+비교대상에 따라 다름. 그리고 이 답변은 IO에서의 얘기임. thread 간에는 다름.
 
 * 동기/비동기: 시스템 콜의 완료를 기다리는가, 즉시 리턴되는가
 * 블로킹/넌블로킹: 대기큐에 들어가는가/시스템콜이 완료된 후에 오는가
@@ -203,10 +203,13 @@ Next Fit: 이전에 할당한 위치부터 프로세스를 담을 수 있는 다
 
 ### 전산 기본
 
-OSI 7계층에 대해서 설명해주세요.  
-TCP/IP 4계층에 대해서 설명해주세요.  
-DNS가 무엇인가요?  
-도메인 이름으로 실제 IP를 어떻게 찾을 수 있는지 흐름을 설명해 주세요.  
+#### OSI 7계층에 대해서 설명해주세요
+
+#### TCP/IP 4계층에 대해서 설명해주세요
+
+#### DNS가 무엇인가요?  
+
+#### 도메인 이름으로 실제 IP를 어떻게 찾을 수 있는지 흐름을 설명해 주세요
 
 ### TCP/UDP
 
@@ -389,3 +392,17 @@ TDD란 무엇인가요?
 Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주세요.  
 애자일 방법론이란?  
 도커란 무엇인가요?  
+
+## 참조
+
+### 질문 목록
+
+* [기술면접 준비하기 - hygoogi](https://velog.io/@hygoogi/%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8-%EB%AA%A8%EC%9D%8C)
+* 프로그래밍 면접 이렇게 준비한다 - 존 몽건 외 2명, 한빛미디어
+
+### 답변
+
+* Wikipedia
+* [StudyTonight-OS tutorial](https://www.studytonight.com/operating-system/)
+* [동기비동기블로킹논블로킹 IO - 배철오](https://www.slideshare.net/unitimes/sync-asyncblockingnonblockingio)
+* Operating System Internals and Design Principles 8th edition - William Stallings, Pearson
