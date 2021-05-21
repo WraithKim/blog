@@ -246,10 +246,13 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 
 ### TCP/UDP
 
-TCP와 UDP의 차이에 대해서 설명해 주세요.  
-TCP 헤더에 대해서 설명해 주세요.  
-MTU가 무엇인가요?  
-3-way hand shake, 4-way hand shake 흐름에 대해서 설명해주세요.  
+#### TCP와 UDP의 차이에 대해서 설명해 주세요
+
+#### TCP 헤더에 대해서 설명해 주세요
+
+#### MTU가 무엇인가요?
+
+#### 3-way hand shake, 4-way hand shake 흐름에 대해서 설명해주세요
 
 ### HTTP
 
