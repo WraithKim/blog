@@ -15,14 +15,11 @@ categories: tech-interview
 
 ##### 정의
 
-<details>
-    <summary>Click to expand</summary>
 프로그램: 어떤 작업을 위해 실행할 수 있는 파일
 
 프로세스: 실행되고 있는 프로그램의 인스턴스. 하나 또는 여러개의 쓰레드와 관련된 시스템 자원(코드나 데이터/열린 파일 등을 가진 메모리 공간)의 집합.
 
 쓰레드: dispatch 가능한 작업의 단위, 프로세서 컨텍스트(PC, Stack Pointer 등)와 데이터 영역인 stack을 가지고 있음. 쓰레드는 순차적으로 실행되고, 인터럽트 가능해서 다른 스레드로 전환될 수 있음.
-</details>
 
 ##### 차이점
 
