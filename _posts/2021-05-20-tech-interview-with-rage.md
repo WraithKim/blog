@@ -57,8 +57,6 @@ categories: tech-interview
 
 </details>
 
-##### 기타 지식
-
 <details>
 <summary markdown="span">기타 지식</summary>
 
@@ -373,7 +371,7 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 #### TCP와 UDP의 차이에 대해서 설명해 주세요
 
 <details>
-<summary markdown="span"></summary>
+<summary markdown="span">차이점</summary>
 
 * TCP: 신뢰성(패킷 손실/중복/순서 바뀜이 없도록 보장), 연결지향적, 흐름제어와 혼잡제어를 함.
 * UDP: 비연결성, 오류 정정이나 재송신, 순서 보장을 하지 않음. 그래서 TCP보다 오버헤드가 적고 빠름.
@@ -383,7 +381,7 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 #### TCP 헤더에 대해서 설명해 주세요
 
 <details>
-<summary markdown="span"></summary>
+<summary markdown="span">설명</summary>
 
 * Source Port: 송신 포트
 * Destination Port: 수신 포트
@@ -402,7 +400,7 @@ OSI보다 단순하고 실용적인 계층 구조로 현재 인터넷의 표준�
 #### MTU가 무엇인가요?
 
 <details>
-<summary markdown="span"></summary>
+<summary markdown="span">설명</summary>
 
 최대 전송 단위, 연결된 네트워크의 수용량에 따르기 때문에 넘지 않도록 주의해야 함.  
 outbound MTU보다 큰 패킷이 도착하면 이를 MTU보다 작도록 나눔.(IP Fragmentation)
@@ -495,7 +493,7 @@ HTTPS는 HTTP와 TCP 사이에 암호화 프로토콜인 SSL/TLS로 HTTP 메세�
 #### HTTP 1.0과 1.1의 차이는 무엇인가요?
 
 <details>
-<summary markdown="span"></summary>
+<summary markdown="span">설명</summary>
 
 1.1에서는 복수의 개체를 하나의 TCP 연결을 통해 보낼 수 있게 되어서 연결 오버헤드를 줄이고, TCP의 혼잡제어의 특징때문에 오래 연결을 유지함으로써 속도가 빨라지는 이점이 있음.
 
