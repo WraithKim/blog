@@ -337,6 +337,8 @@ HTTPS는 HTTP와 TCP 사이에 암호화 프로토콜인 SSL/TLS로 HTTP 메세�
 
 #### HTTP 1.0과 1.1의 차이는 무엇인가요?
 
+1.1에서는 복수의 개체를 하나의 TCP 연결을 통해 보낼 수 있게 되어서 연결 오버헤드를 줄이고, TCP의 혼잡제어의 특징때문에 오래 연결을 유지함으로써 속도가 빨라지는 이점이 있음.
+
 #### HTTP2와 그 특징에 대해서 설명해 주세요
 
 #### HTTP 헤더의 구조에 대해서 설명해 주세요
@@ -344,6 +346,19 @@ HTTPS는 HTTP와 TCP 사이에 암호화 프로토콜인 SSL/TLS로 HTTP 메세�
 #### keep-alive 헤더에 대해서 설명해 주세요
 
 #### HTTP GET과 POST의 차이는 무엇인가요?
+
+둘 다 리소스 요청이지만 GET은 URL을 통해 요청을 명시하지만 POST는 요청 객체 안에 포함됨.
+
+GET
+
+* 캐싱이 가능하고, 요청을 URL로 쉽게 공유할 수 있음.
+* 내용이 외부에 쉽게 노출되기 때문에 민감한 내용은 이 방법을 사용해선 안됨.
+* URL에 포함되기 때문에 길이 제한이 있음.
+
+POST
+
+* 캐싱되지 않음. POST 요청은 공유될 수 없음.
+* 데이터 길이 제한은 없음.
 
 #### 쿠키와 세션에 대해서 설명해 주세요
 
@@ -527,3 +542,4 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [TTA 정보통신용어사전](https://terms.tta.or.kr/)
 * [정보통신기술용어해설](http://www.ktword.co.kr/)
 * [MDN](https://developer.mozilla.org/)
+* [생활코딩](https://www.opentutorials.org/)
