@@ -546,12 +546,37 @@ HTTP 프로토콜에서는 상태가 없음. 그래서 쿠키와 세션은 HTTP�
 
 ### 웹
 
-웹브라우저에서 서버로 요청했을 때, 흐름을 설명해주세요.  
-CORS란 무엇인가요?  
-웹 서버와 웹 어플리케이션 서버(WAS)의 차이는 무엇인가요?  
-REST API에 대해서 설명해 주세요.  
-API Gateway란 무엇인가요?  
-API Gateway가 다운되면 모든 API를 사용 못할지도 모르는데, 어떤 방안을 마련해야 할까요?  
+#### 웹브라우저에서 서버로 요청했을 때, 흐름을 설명해주세요  
+
+<details>
+<summary markdown="span">설명</summary>
+
+1. 브라우저의 주소창에 URL을 입력함.
+2. URL의 도메인 네임 부분을 DNS 서버에서 검색함.
+3. DNS 서버에서 해당 도메인 네임의 IP 주소를 찾아서 알려줌.
+4. URL 정보가 담긴 HTTP 요청 메세지를 생성함.
+5. IP 주소에 해당되는 서버로 TCP 연결을 열고 HTTP 요청 메세지를 전송함.
+6. HTTP 요청 메세지를 받은 서버는 URL 정보에 해당되는 데이터를 검색함.
+7. 검색된 데이터를 HTTP 응답 메세지에 담아서 TCP 연결로 클라이언트에 전송함.
+8. HTTP 응답 메세지 내의 데이터를 웹 브라우저를 통해 출력함.
+
+</details>
+
+#### CORS란 무엇인가요?  
+
+#### 웹 서버와 웹 어플리케이션 서버(WAS)의 차이는 무엇인가요?  
+
+* 웹서버: HTTP 요청을 받고 정적 컨텐츠를 제공하거나 동적 컨텐츠를 WAS에 요청함.  
+* WAS: 동적 컨텐츠를 생성하거나 서버에 데이터를 저장하는 등의 로직을 실행함.
+
+웹서버는 WAS 대신 정적 컨텐츠를 처리해줌으로써 부담을 줄여줌.  
+WAS는 요청이 들어올 때마다 그에 맞는 컨텐츠를 생성해 줌으로써 웹서버가 모든 경우의 수에 대한 컨텐츠를 준비해야 되는 부담을 해결해줌.
+
+#### REST API에 대해서 설명해 주세요  
+
+#### API Gateway란 무엇인가요?  
+
+#### API Gateway가 다운되면 모든 API를 사용 못할지도 모르는데, 어떤 방안을 마련해야 할까요?  
 
 ## 데이터베이스
 
@@ -726,3 +751,4 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [MDN](https://developer.mozilla.org/)
 * [생활코딩](https://www.opentutorials.org/)
 * [W3Schools](https://www.w3schools.com/)
+* [TCP School](http://tcpschool.com/)
