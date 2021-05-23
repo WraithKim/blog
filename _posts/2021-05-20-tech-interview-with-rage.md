@@ -778,3 +778,5 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [생활코딩](https://www.opentutorials.org/)
 * [W3Schools](https://www.w3schools.com/)
 * [TCP School](http://tcpschool.com/)
+* [레드햇](https://www.redhat.com/)
+* [NHN Cloud meetup](https://meetup.toast.com/)
