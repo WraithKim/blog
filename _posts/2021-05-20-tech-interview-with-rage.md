@@ -631,9 +631,29 @@ WAS는 요청이 들어올 때마다 그에 맞는 컨텐츠를 생성해 줌으
 
 #### ORM이란 무엇인가요?
 
+ORM은 RDB의 데이터를 OOP 언어로 다룰 수 있도록 하는 기술이다.
+
 #### NoSQL이란 무엇인가요?
 
+특정 데이터 모델에 대해 특정 목적에 맞추어 구축되는 데이터베이스로 대용량, 비정형, 빠르게 바뀌는 데이터에 대해 RDB보다 유연하게 대응하기 위해 만들어졌다.
+
+* 관계형 모델을 사용하지 않음. JOIN 연산도 없음.
+* Key-value, Graph, Document 등 다양한 형태의 NoSQL 존재
+* 대용량 데이터 저장 가능
+* 고정되지 않은 테이블 스키마: ID를 제외하면 동일하지 않아도 됨.
+* 여러 서버로 분할해서 수평적 확장이 가능
+* 특정 데이터 모델에 최적화된 구조와 기능을 가지기 때문에 성능이 좋고 기능이 더 뛰어남.
+
 #### 스키마란 무엇인가요?
+
+데이터베이스의 전체적인 구조와 제약조건에 대한 명세
+
+* 외부 스키마
+  * 최종 사용자에게 필요한 데이터 명세
+* 개념 스키마
+  * 시스템 전체를 설계하기 위해 필요한 데이터베이스 논리적 구조
+* 내부 스키마
+  * 물리적 저장 장치에서 실제로 저장되는 구조
 
 ### 인덱스
 
@@ -814,3 +834,6 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [TCP School](http://tcpschool.com/)
 * [레드햇](https://www.redhat.com/)
 * [NHN Cloud meetup](https://meetup.toast.com/)
+* [AWS](https://aws.amazon.com/)
+* [Azure](https://azure.microsoft.com/)
+* [한국데이터산업진흥원](https://kdata.or.kr/)
