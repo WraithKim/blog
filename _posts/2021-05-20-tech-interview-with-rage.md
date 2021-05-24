@@ -516,18 +516,29 @@ HTTPS는 HTTP와 TCP 사이에 암호화 프로토콜인 SSL/TLS로 HTTP 메세�
 <details>
 <summary markdown="span">설명</summary>
 
-둘 다 리소스 요청이지만 GET은 URL을 통해 요청을 명시하지만 POST는 요청 객체 안에 포함됨.
-
 GET
 
-* 캐싱이 가능하고, 요청을 URL로 쉽게 공유할 수 있음.
-* 내용이 외부에 쉽게 노출되기 때문에 민감한 내용은 이 방법을 사용해선 안됨.
+* 리소스를 받아오기 위한 메서드.
+* 서버의 상태를 바꾸지 않기 때문에 캐싱이 가능함.
+* URL에 매개변수를 포함시켜서 보냄.
+* 요청 내용을 URL로 쉽게 공유할 수 있음. 하지만내용이 외부에 쉽게 노출되기 때문에 민감한 내용은 포함해서는 안됨.
 * URL에 포함되기 때문에 길이 제한이 있음.
 
 POST
 
-* 캐싱되지 않음. POST 요청은 공유될 수 없음.
+* 데이터를 보내서 서버에서 처리해 달라고 요청하는 메서드.
+* 서버의 상태가 변경되므로 캐싱되지 않음.
+* 요청 바디를 통해 데이터를 전달할 수 있음.
 * 데이터 길이 제한은 없음.
+
+</details>
+
+<details>
+<summary markdown="span">기타지식</summary>
+
+* PUT: 새로운 리소스를 만들거나 기존 리소스를 전체 교체. 두 번 이상 호출되더라도 같은 결과를 내는 멱등성이 있음.
+* PATCH: 기존 리소스의 일부를 업데이트. 따라서 멱등성이 없음.
+* DELETE: 리소스 삭제
 
 </details>
 
@@ -837,3 +848,4 @@ Monolitc Architecture, Micro Service Architecture에 대해 각각 설명해 주
 * [AWS](https://aws.amazon.com/)
 * [Azure](https://azure.microsoft.com/)
 * [한국데이터산업진흥원](https://kdata.or.kr/)
+* [Wishket](https://www.wishket.com/)
